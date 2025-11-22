@@ -1,22 +1,129 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hola Mundo</title>
+    <title>INTECAP</title>
     <link rel="stylesheet" href="estilos.css">
 </head>
 <body>
-    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcS0DOg6XQaILhGaKTvseI5At_QrmP1mxLhzyA&s" alt="Intecap Logo" title="Intecap">
-    <br>
-    <button id="Alerta">Presionar xd</button>
-
-    <script>
-    document.getElementById("Alerta").addEventListener("click", function() {
-        alert("Hola Mundo");
-    });
-</script>
 <br>
-<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSy7KUBvTJ1m_H2HvPEl_FIWYdNzh08R-FgOg&s" alt="Intecap Logo" title="Intecap">
+
+  <h2 style="color: white; text-align: center; size: 300px">INTECAP</h2>
+
+<svg class="svg-container">
+    <defs>
+      <filter id="🌀↖️" colorInterpolationFilters="sRGB" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise1" seed="1" />
+        <feOffset in="noise1" dx="0" dy="0" result="offsetNoise1">
+          <animate attributeName="dy" values="700; 0" dur="6s" repeatCount="indefinite" calcMode="linear" />
+        </feOffset>
+
+        <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise2" seed="1" />
+        <feOffset in="noise2" dx="0" dy="0" result="offsetNoise2">
+          <animate attributeName="dy" values="0; -700" dur="6s" repeatCount="indefinite" calcMode="linear" />
+        </feOffset>
+
+        <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise1" seed="2" />
+        <feOffset in="noise1" dx="0" dy="0" result="offsetNoise3">
+          <animate attributeName="dx" values="490; 0" dur="6s" repeatCount="indefinite" calcMode="linear" />
+        </feOffset>
+
+        <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="10" result="noise2" seed="2" />
+        <feOffset in="noise2" dx="0" dy="0" result="offsetNoise4">
+          <animate attributeName="dx" values="0; -490" dur="6s" repeatCount="indefinite" calcMode="linear" />
+        </feOffset>
+
+        <feComposite in="offsetNoise1" in2="offsetNoise2" result="part1" />
+        <feComposite in="offsetNoise3" in2="offsetNoise4" result="part2" />
+        <feBlend in="part1" in2="part2" mode="color-dodge" result="combinedNoise" />
+
+        <feDisplacementMap in="SourceGraphic" in2="combinedNoise" scale="30" xChannelSelector="R" yChannelSelector="B" />
+      </filter>
+      <filter id="🌀🎨" colorInterpolationFilters="sRGB" x="-20%" y="-20%" width="140%" height="140%">
+        <feTurbulence type="turbulence" baseFrequency="0.02" numOctaves="7" />
+        <feColorMatrix type="hueRotate" result="pt1" >
+          <animate attributeName="values" values="0;360;" dur=".6s" repeatCount="indefinite" calcMode="paced" />
+        </feColorMatrix>
+        <feComposite />
+        <feTurbulence type="turbulence" baseFrequency="0.03" numOctaves="7" seed="5" />
+        <feColorMatrix type="hueRotate" result="pt2">
+          <animate attributeName="values" values="0; 333; 199; 286; 64; 168; 256; 157; 360;" dur="5s" repeatCount="indefinite" calcMode="paced" />
+        </feColorMatrix>
+        <feBlend in="pt1" in2="pt2" mode="normal" result="combinedNoise" />
+        
+
+
+        <feDisplacementMap in="SourceGraphic" scale="30" xChannelSelector="R" yChannelSelector="B" />
+      </filter>
+    </defs>
+  </svg>
+<main class="main-container">
+  <div ↖️ class="card-container">
+    <div class="inner-container">
+      <div class="border-outer">
+        <div ↖️ class="main-card"></div>
+      </div>
+      <div class="glow-layer-1"></div>
+      <div class="glow-layer-2"></div>
+    </div>
+
+    <div class="overlay-1"></div>
+    <div class="overlay-2"></div>
+    <div class="background-glow"></div>
+
+    <div class="content-container">
+    <div class="content-top">
+        <div class="scrollbar-glass">
+        Senior
+        </div>
+        <p class="title">Full-stack</p>
+    </div>
+
+    <hr class="divider" />
+
+    <div class="content-bottom">
+        <p class="description">Desarrollador full-stack, pero con mucha experiencia, capaz de liderar proyectos completos, tomar decisiones técnicas importantes y guiar a otros programadores..</p>
+        <br>
+        <img src="https://kinsta.com/es/wp-content/uploads/sites/8/2021/12/what-is-a-full-stack-developer.png" alt="senior pc">
+    </div>
+    </div>
+</div>
+  
+<div 🎨 class="card-container">
+    <div class="inner-container">
+    <div class="border-outer">
+        <div class="main-card"></div>
+    </div>
+    <div class="glow-layer-1"></div>
+    <div class="glow-layer-2"></div>
+    </div>
+
+    <div class="overlay-1"></div>
+    <div class="overlay-2"></div>
+    <div class="background-glow"></div>
+
+    <div class="content-container">
+      <div class="content-top">
+        <div class="scrollbar-glass">
+          Junior
+        </div>
+        <p class="title">Full-stack</p>
+      </div>
+
+      <hr class="divider" />
+
+      <div class="content-bottom">
+        <p class="description">Desarrollador que recién está empezando y puede trabajar tanto en front-end como en back-end, pero aún necesita guía, práctica y supervisión.
+
+No domina todo a profundidad, pero ya entiende lo básico y puede contribuir a proyectos.</p>
+          <br>
+          <img src="https://e1.pxfuel.com/desktop-wallpaper/986/964/desktop-wallpaper-a-newbie-s-journey-into-the-expressive-world-of-aesthetic-pc-gaming.jpg" alt="junior pc" height="150px">
+      </div>
+    </div>
+  </div>
+</main>
 </body>
 </html>
+
+
