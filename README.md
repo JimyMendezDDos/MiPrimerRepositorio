@@ -1,2 +1,0 @@
-# MiPrimerRepositorio
-Proyect prueba,
